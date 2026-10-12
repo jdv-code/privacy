@@ -1,0 +1,253 @@
+<title>Privacyverklaring Keuzerad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+  /* Layout: enkele leeskolom, documentachtig; kader bovenaan vat de kern samen */
+  :root {
+    --bg: #fbfcfd;
+    --surface: #ffffff;
+    --fg: #101a28;
+    --muted: #55687f;
+    --accent: #0369a1;
+    --accent-soft: #e8f4fb;
+    --line: #e1e8f0;
+    --display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --body: 'Source Serif 4', ui-serif, Georgia, 'Times New Roman', serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b1220;
+      --surface: #131d30;
+      --fg: #e7eef7;
+      --muted: #9aadc4;
+      --accent: #56c3f5;
+      --accent-soft: #11283b;
+      --line: #243349;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b1220;
+    --surface: #131d30;
+    --fg: #e7eef7;
+    --muted: #9aadc4;
+    --accent: #56c3f5;
+    --accent-soft: #11283b;
+    --line: #243349;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.65;
+    padding-inline: 20px;
+    padding-block: 0;
+  }
+
+  .sheet {
+    max-width: 44rem;
+    margin-inline: auto;
+    padding-block: 56px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  /* Kop */
+  .masthead { display: flex; flex-direction: column; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand svg { width: 38px; height: 38px; flex: none; }
+  .brand span {
+    font-family: var(--display); font-weight: 800; font-size: 19px;
+    letter-spacing: -0.01em;
+  }
+  h1 {
+    font-family: var(--display); font-weight: 800;
+    font-size: clamp(30px, 6vw, 42px); line-height: 1.12;
+    letter-spacing: -0.025em; text-wrap: balance; margin: 0;
+  }
+  .dateline {
+    font-family: var(--display); font-weight: 600; font-size: 13px;
+    letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted);
+  }
+
+  /* Samenvattingskader */
+  .summary {
+    background: var(--accent-soft);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+  }
+  .summary p { margin: 0; }
+  .summary strong { font-family: var(--display); font-weight: 700; }
+
+  /* Secties */
+  section { display: flex; flex-direction: column; gap: 12px; }
+  h2 {
+    font-family: var(--display); font-weight: 700;
+    font-size: 21px; line-height: 1.25; letter-spacing: -0.012em;
+    margin: 0; padding-top: 10px; border-top: 1px solid var(--line);
+    text-wrap: balance;
+  }
+  p { margin: 0; }
+  ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 7px; }
+  li::marker { color: var(--accent); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+
+  strong { font-family: var(--display); font-weight: 700; }
+
+  /* Contactblok */
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .contact dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; }
+  .contact dt {
+    font-family: var(--display); font-weight: 600; font-size: 13px;
+    letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted);
+    padding-top: 3px;
+  }
+  .contact dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+  @media (max-width: 420px) {
+    .contact dl { grid-template-columns: 1fr; gap: 2px 0; }
+    .contact dd { margin-bottom: 10px; }
+  }
+
+  footer {
+    font-family: var(--display); font-size: 13px; color: var(--muted);
+    border-top: 1px solid var(--line); padding-top: 18px; line-height: 1.5;
+  }
+</style>
+
+<div class="sheet">
+
+  <header class="masthead">
+    <div class="brand">
+      <svg viewBox="0 0 512 512" aria-hidden="true">
+        <circle cx="256" cy="256" r="196" fill="#ffffff" stroke="#cbd5e1" stroke-width="14"/>
+        <path d="M256,256 L256,70 A186,186 0 0,1 349,95 Z" fill="#ef4444"/>
+        <path d="M256,256 L349,95 A186,186 0 0,1 417,163 Z" fill="#f97316"/>
+        <path d="M256,256 L417,163 A186,186 0 0,1 442,256 Z" fill="#eab308"/>
+        <path d="M256,256 L442,256 A186,186 0 0,1 417,349 Z" fill="#22c55e"/>
+        <path d="M256,256 L417,349 A186,186 0 0,1 349,417 Z" fill="#06b6d4"/>
+        <path d="M256,256 L349,417 A186,186 0 0,1 256,442 Z" fill="#3b82f6"/>
+        <path d="M256,256 L256,442 A186,186 0 0,1 163,417 Z" fill="#6366f1"/>
+        <path d="M256,256 L163,417 A186,186 0 0,1 95,349 Z" fill="#a855f7"/>
+        <path d="M256,256 L95,349 A186,186 0 0,1 70,256 Z" fill="#ec4899"/>
+        <path d="M256,256 L70,256 A186,186 0 0,1 95,163 Z" fill="#14b8a6"/>
+        <path d="M256,256 L95,163 A186,186 0 0,1 163,95 Z" fill="#84cc16"/>
+        <path d="M256,256 L163,95 A186,186 0 0,1 256,70 Z" fill="#f43f5e"/>
+        <circle cx="256" cy="256" r="38" fill="#0f172a" stroke="#ffffff" stroke-width="10"/>
+      </svg>
+      <span>Keuzerad</span>
+    </div>
+    <h1>Privacyverklaring</h1>
+    <div class="dateline">Laatst bijgewerkt op 12 oktober 2026</div>
+  </header>
+
+  <div class="summary">
+    <p><strong>Kort samengevat:</strong> Keuzerad verzamelt geen persoonsgegevens. De app
+    stuurt niets naar een server, heeft geen account, geen advertenties en geen trackers.
+    Alles wat je instelt blijft op je eigen toestel staan.</p>
+  </div>
+
+  <section>
+    <h2>Wie deze app aanbiedt</h2>
+    <p>Keuzerad wordt uitgegeven door <strong>devalk.xyz</strong>, gevestigd in Nederland en
+    ingeschreven bij de Kamer van Koophandel onder nummer <strong>42069919</strong>. Voor
+    zover de Algemene verordening gegevensbescherming (AVG) van toepassing zou zijn, is
+    devalk.xyz de verwerkingsverantwoordelijke.</p>
+  </section>
+
+  <section>
+    <h2>Welke gegevens worden verzameld</h2>
+    <p>Geen. De app vraagt geen naam, geen e-mailadres en geen account. Er wordt geen
+    locatie opgevraagd, geen contactenlijst gelezen en geen apparaat-identificatie
+    doorgegeven. Er worden geen gegevens verzameld, opgeslagen of gedeeld met de uitgever
+    of met derden.</p>
+  </section>
+
+  <section>
+    <h2>Wat de app wel op je toestel bewaart</h2>
+    <p>Om de app bruikbaar te houden, onthoudt Keuzerad twee dingen in de lokale opslag van
+    het toestel:</p>
+    <ul>
+      <li>de twaalf vakjes van het rad: de tekst en de kleur die je zelf hebt ingesteld;</li>
+      <li>of het geluid aan of uit staat.</li>
+    </ul>
+    <p>Deze gegevens verlaten het toestel niet. Ze zijn niet zichtbaar voor de uitgever en
+    worden nergens naartoe verstuurd. Wis je de app-gegevens of verwijder je de app, dan
+    zijn ze weg.</p>
+  </section>
+
+  <section>
+    <h2>Geen internetverbinding, geen externe diensten</h2>
+    <p>Keuzerad werkt volledig offline. De app laadt geen lettertypen, afbeeldingen of
+    scripts van buitenaf en maakt geen verbinding met servers van de uitgever of van
+    anderen. Er zijn geen analytics-pakketten, geen crashrapportage en geen
+    advertentienetwerken in de app verwerkt.</p>
+    <p>Google Play zelf kan bij het downloaden en bijwerken van de app gegevens verwerken.
+    Dat gebeurt buiten de app om en valt onder het privacybeleid van Google.</p>
+  </section>
+
+  <section>
+    <h2>Toestemmingen</h2>
+    <p>De app gebruikt alleen de trilfunctie van het toestel, om een korte trilling te geven
+    wanneer het rad tot stilstand komt. Daar is geen persoonsgegeven voor nodig. Andere
+    toestemmingen vraagt de app niet.</p>
+  </section>
+
+  <section>
+    <h2>Kinderen</h2>
+    <p>Keuzerad is gemaakt om door kinderen gebruikt te worden. Juist daarom verzamelt de
+    app van niemand gegevens, dus ook niet van kinderen. Er zitten geen advertenties in,
+    geen in-app aankopen, geen links naar sociale media en geen mogelijkheid om met anderen
+    te communiceren.</p>
+  </section>
+
+  <section>
+    <h2>Jouw rechten</h2>
+    <p>Volgens de AVG heb je onder meer het recht om in te zien welke persoonsgegevens over
+    je worden verwerkt, en om die te laten corrigeren of verwijderen. Omdat deze app geen
+    persoonsgegevens verwerkt, zijn er geen gegevens om in te zien of te verwijderen. De
+    instellingen die op je eigen toestel staan verwijder je zelf, via de app-instellingen
+    van Android of door de app te verwijderen.</p>
+    <p>Heb je toch een vraag of een klacht, neem dan contact op via het adres hieronder. Je
+    kunt een klacht ook indienen bij de Autoriteit Persoonsgegevens.</p>
+  </section>
+
+  <section>
+    <h2>Wijzigingen in deze verklaring</h2>
+    <p>Verandert er iets aan de app waardoor deze verklaring niet meer klopt, dan wordt de
+    tekst aangepast en de datum bovenaan bijgewerkt. Grote wijzigingen worden in de
+    release-aantekeningen van de app vermeld.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <dl>
+        <dt>Uitgever</dt>
+        <dd>devalk.xyz</dd>
+        <dt>KvK</dt>
+        <dd>42069919</dd>
+        <dt>E-mail</dt>
+        <dd>privacy@devalk.xyz</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    Deze verklaring hoort bij de Android-app Keuzerad zoals aangeboden via Google Play.
+  </footer>
+
+</div>
