@@ -1,0 +1,414 @@
+<title>Privacyverklaring MHC Weesp Teammanager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+  /* Layout: enkele leeskolom, documentachtig; kader bovenaan vat de kern samen */
+  :root {
+    --bg: #fbfcfd;
+    --surface: #ffffff;
+    --fg: #101a28;
+    --muted: #55687f;
+    --accent: #0f2b5c;
+    --accent-soft: #e9eef7;
+    --line: #e1e8f0;
+    --flag: #b91c1c;
+    --flag-soft: #fef2f2;
+    --display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --body: 'Source Serif 4', ui-serif, Georgia, 'Times New Roman', serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b1220;
+      --surface: #131d30;
+      --fg: #e7eef7;
+      --muted: #9aadc4;
+      --accent: #7aa7e8;
+      --accent-soft: #16233a;
+      --line: #243349;
+      --flag: #fca5a5;
+      --flag-soft: #2a1618;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b1220;
+    --surface: #131d30;
+    --fg: #e7eef7;
+    --muted: #9aadc4;
+    --accent: #7aa7e8;
+    --accent-soft: #16233a;
+    --line: #243349;
+    --flag: #fca5a5;
+    --flag-soft: #2a1618;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.65;
+    padding-inline: 20px;
+    padding-block: 0;
+  }
+
+  .sheet {
+    max-width: 44rem;
+    margin-inline: auto;
+    padding-block: 56px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  /* Kop */
+  .masthead { display: flex; flex-direction: column; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand svg { width: 38px; height: 38px; flex: none; }
+  .brand span {
+    font-family: var(--display); font-weight: 800; font-size: 19px;
+    letter-spacing: -0.01em;
+  }
+  h1 {
+    font-family: var(--display); font-weight: 800;
+    font-size: clamp(30px, 6vw, 42px); line-height: 1.12;
+    letter-spacing: -0.025em; text-wrap: balance; margin: 0;
+  }
+  .dateline {
+    font-family: var(--display); font-weight: 600; font-size: 13px;
+    letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted);
+  }
+
+  /* Samenvattingskader */
+  .summary {
+    background: var(--accent-soft);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .summary p { margin: 0; }
+  .summary strong { font-family: var(--display); font-weight: 700; }
+
+  /* Secties */
+  section { display: flex; flex-direction: column; gap: 12px; }
+  h2 {
+    font-family: var(--display); font-weight: 700;
+    font-size: 21px; line-height: 1.25; letter-spacing: -0.012em;
+    margin: 0; padding-top: 10px; border-top: 1px solid var(--line);
+    text-wrap: balance;
+  }
+  h3 {
+    font-family: var(--display); font-weight: 700;
+    font-size: 15px; line-height: 1.35; margin: 6px 0 -4px;
+    letter-spacing: -0.005em;
+  }
+  p { margin: 0; }
+  ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 7px; }
+  li::marker { color: var(--accent); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+
+  strong { font-family: var(--display); font-weight: 700; }
+
+  /* Tabel wie-ziet-wat */
+  .roles {
+    border: 1px solid var(--line); border-radius: 10px;
+    overflow: hidden; background: var(--surface);
+  }
+  .roles div {
+    padding: 14px 18px; border-top: 1px solid var(--line);
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .roles div:first-child { border-top: 0; }
+  .roles dt {
+    font-family: var(--display); font-weight: 700; font-size: 14px;
+  }
+  .roles dd { margin: 0; font-size: 16px; color: var(--muted); }
+
+  /* Aandachtskader */
+  .flag {
+    background: var(--flag-soft);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--flag);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .flag p { margin: 0; }
+
+  /* Contactblok */
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .contact dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; }
+  .contact dt {
+    font-family: var(--display); font-weight: 600; font-size: 13px;
+    letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted);
+    padding-top: 3px;
+  }
+  .contact dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+  @media (max-width: 420px) {
+    .contact dl { grid-template-columns: 1fr; gap: 2px 0; }
+    .contact dd { margin-bottom: 10px; }
+  }
+
+  footer {
+    font-family: var(--display); font-size: 13px; color: var(--muted);
+    border-top: 1px solid var(--line); padding-top: 18px; line-height: 1.5;
+  }
+</style>
+
+<div class="sheet">
+
+  <header class="masthead">
+    <div class="brand">
+      <svg viewBox="0 0 512 512" aria-hidden="true">
+        <rect x="40" y="40" width="432" height="432" rx="64" fill="#0f2b5c"/>
+        <circle cx="256" cy="256" r="118" fill="none" stroke="#ffffff" stroke-width="16" opacity="0.85"/>
+        <path d="M256 138 L256 374" stroke="#ffffff" stroke-width="16" opacity="0.85"/>
+        <path d="M168 318 q0 -74 44 -74 q44 0 44 74" fill="none" stroke="#dc2626" stroke-width="20" stroke-linecap="round"/>
+        <circle cx="330" cy="322" r="22" fill="#dc2626"/>
+      </svg>
+      <span>MHC Weesp Teammanager</span>
+    </div>
+    <h1>Privacyverklaring</h1>
+    <div class="dateline">Laatst bijgewerkt op 18 oktober 2026</div>
+  </header>
+
+  <div class="summary">
+    <p><strong>Kort samengevat:</strong> deze app slaat wél persoonsgegevens op. Dat is nodig
+    om een team te kunnen beheren: namen van spelers, contactgegevens van ouders en
+    begeleiders, wedstrijdschema's, opstellingen, taakverdelingen en afmeldingen. Die
+    gegevens staan in de cloud bij Google Firebase en zijn alleen zichtbaar voor mensen die
+    aan hetzelfde team gekoppeld zijn.</p>
+    <p>Er zitten <strong>geen advertenties, geen trackers en geen analytics</strong> in de
+    app. Gegevens worden niet verkocht en niet gebruikt voor reclame.</p>
+    <p>Omdat het om gegevens van kinderen gaat, is er een aparte paragraaf over wat dat
+    betekent en wat ouders kunnen doen.</p>
+  </div>
+
+  <section>
+    <h2>Wie deze app aanbiedt</h2>
+    <p>MHC Weesp Teammanager wordt uitgegeven door <strong>devalk.xyz</strong>, gevestigd in
+    Nederland en ingeschreven bij de Kamer van Koophandel onder nummer
+    <strong>42069919</strong>. devalk.xyz is de verwerkingsverantwoordelijke in de zin van
+    de Algemene verordening gegevensbescherming (AVG).</p>
+    <p>De app is een hulpmiddel voor teams van MHC Weesp, maar wordt niet door de vereniging
+    zelf uitgegeven. Vragen over je gegevens in deze app gaan dus naar devalk.xyz, niet naar
+    de club.</p>
+  </section>
+
+  <section>
+    <h2>Welke gegevens worden verwerkt</h2>
+
+    <h3>Van jou als gebruiker</h3>
+    <ul>
+      <li>je naam en e-mailadres;</li>
+      <li>je telefoonnummer, als je dat invult;</li>
+      <li>een profielfoto, als je die uploadt;</li>
+      <li>je rol binnen het team (ouder, coach, teammanager of beheerder) en aan welk team
+      je gekoppeld bent;</li>
+      <li>gegevens over je aanmelding: of je e-mailadres is bevestigd, wanneer je voor het
+      laatst inlogde en hoe vaak je hebt ingelogd.</li>
+    </ul>
+
+    <h3>Van spelers</h3>
+    <ul>
+      <li>voornaam en achternaam;</li>
+      <li>een pasfoto, als een teammanager of coach die toevoegt;</li>
+      <li>of het om een invalspeler gaat;</li>
+      <li>naam, e-mailadres en telefoonnummer van de ouders of verzorgers.</li>
+    </ul>
+
+    <h3>Van begeleiders</h3>
+    <ul>
+      <li>voornaam, achternaam, e-mailadres en telefoonnummer;</li>
+      <li>een foto, als die is toegevoegd;</li>
+      <li>welke rol iemand heeft en aan welk kind iemand eventueel gekoppeld is.</li>
+    </ul>
+
+    <h3>Rond wedstrijden</h3>
+    <ul>
+      <li>tegenstander, datum, tijd, verzameltijd, locatie en veld;</li>
+      <li>de opstelling: welke speler op welke positie staat en wie op de wisselbank zit;</li>
+      <li>de taakverdeling: coaches, spelbegeleiders, op- en afbouw, fruithapje en wie
+      rijdt, inclusief het aantal plaatsen in de auto;</li>
+      <li>afmeldingen en de reden die daarbij is ingevuld;</li>
+      <li>de uitslag en eventuele aantekeningen.</li>
+    </ul>
+
+    <h3>Rond het team</h3>
+    <ul>
+      <li>teamnaam, leeftijdscategorie en seizoen;</li>
+      <li>foto's van het thuis- en uittenue;</li>
+      <li>de code van de keeperstas;</li>
+      <li>links naar spelregels en zelfgemaakte veldopstellingen.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Waarvoor deze gegevens worden gebruikt</h2>
+    <p>Uitsluitend om het team te kunnen organiseren: wedstrijden plannen, opstellingen
+    maken, taken verdelen, vervoer regelen en afmeldingen doorgeven aan de coach. De
+    gegevens worden niet gebruikt voor reclame, niet voor profilering en niet voor andere
+    doelen.</p>
+    <p>De grondslag hiervoor is het gerechtvaardigd belang van het team om wedstrijden te
+    kunnen organiseren, en voor je eigen account de uitvoering van het gebruik dat je zelf
+    hebt aangevraagd. Een profielfoto of een pasfoto van een speler voeg je zelf toe en kun
+    je ook zelf weer weghalen.</p>
+  </section>
+
+  <section>
+    <h2>Gegevens van kinderen</h2>
+    <p>Deze app gaat over jeugdteams, dus het grootste deel van de gegevens gaat over
+    kinderen: hun naam, hun foto en bij welk team ze spelen. Dat is bewust beperkt gehouden.
+    De app vraagt geen geboortedatum, geen adres, geen schoolgegevens en geen medische
+    informatie van spelers.</p>
+    <p>Spelers hebben zelf geen account in de app. Gegevens over een kind worden ingevoerd
+    door de teammanager of de coach, en zijn in te zien door de ouders van kinderen in
+    hetzelfde team en door de begeleiders van dat team.</p>
+    <p>Ben je ouder of verzorger en wil je niet dat de foto of de naam van je kind in de app
+    staat, geef dat dan door aan de teammanager of stuur een bericht naar het adres
+    onderaan deze pagina. De gegevens worden dan verwijderd of beperkt.</p>
+  </section>
+
+  <section>
+    <h2>Afmeldredenen</h2>
+    <div class="flag">
+      <p>Bij een afmelding kan een reden worden ingevuld, bijvoorbeeld "ziek", "vakantie" of
+      "familieweekend". Dat is een vrij tekstveld en de tekst is zichtbaar voor iedereen in
+      het team. Vul daar dus geen medische details in. Een korte aanduiding is genoeg; de
+      coach hoeft niet te weten wat iemand precies mankeert.</p>
+    </div>
+    <p>Een ingevulde reden verdwijnt zodra de speler weer beschikbaar wordt gemeld.</p>
+  </section>
+
+  <section>
+    <h2>Wie welke gegevens kan zien</h2>
+    <p>De app is afgeschermd per team. Je ziet alleen de teams waar je aan gekoppeld bent.</p>
+    <dl class="roles">
+      <div>
+        <dt>Ouders</dt>
+        <dd>Zien het schema, de opstellingen, de taakverdeling en de contactgegevens van de
+        andere ouders en begeleiders van hetzelfde team. Ze kunnen hun eigen kind afmelden.</dd>
+      </div>
+      <div>
+        <dt>Coaches en teammanagers</dt>
+        <dd>Zien hetzelfde, en kunnen daarnaast spelers, wedstrijden, opstellingen en
+        begeleiders van hun eigen team aanpassen.</dd>
+      </div>
+      <div>
+        <dt>Beheerder</dt>
+        <dd>Eén beheerdersaccount, in handen van devalk.xyz, kan alle teams zien en beheren.
+        Dat is nodig om teams aan te maken, fouten te herstellen en accounts te koppelen.</dd>
+      </div>
+    </dl>
+    <p>Deze afscherming is ook aan de serverkant ingesteld, niet alleen in het scherm. Wie
+    niet aan een team gekoppeld is, kan de gegevens van dat team niet opvragen.</p>
+  </section>
+
+  <section>
+    <h2>Waar de gegevens staan</h2>
+    <p>De app gebruikt <strong>Google Firebase</strong> voor het inloggen (Firebase
+    Authentication), voor de opslag van de teamgegevens (Cloud Firestore) en voor de foto's
+    (Cloud Storage). Google treedt daarbij op als verwerker in opdracht van devalk.xyz.</p>
+    <p>De gegevens staan op servers van Google. Google kan daarbij gegevens doorgeven naar
+    landen buiten de Europese Economische Ruimte. Google heeft daarvoor de standaardbepalingen
+    van de Europese Commissie afgesloten. Meer daarover staat in het privacybeleid van
+    Google Cloud en Firebase.</p>
+    <p>Er worden geen gegevens gedeeld met andere partijen. Er zitten geen
+    advertentienetwerken, analytics-pakketten of trackers in de app.</p>
+  </section>
+
+  <section>
+    <h2>Inloggen</h2>
+    <p>Je logt in met een e-mailadres en een wachtwoord. Het wachtwoord wordt beheerd door
+    Firebase Authentication en is voor devalk.xyz niet zichtbaar.</p>
+    <p>Biedt de app daarnaast de mogelijkheid om in te loggen met een bestaand Google-,
+    Microsoft-, Apple- of Facebook-account, en kies je daarvoor, dan ontvangt de app van die
+    partij je naam en je e-mailadres. Je wachtwoord van die dienst wordt niet gedeeld. Welke
+    gegevens die partij zelf vastlegt over het inloggen, staat in hun eigen privacybeleid.</p>
+  </section>
+
+  <section>
+    <h2>Wat op je eigen toestel blijft</h2>
+    <p>Om de app ook zonder internet bruikbaar te houden, bewaart hij een kopie van de
+    teamgegevens in de lokale opslag van je toestel. Daarnaast staat er een wachtrij met
+    wijzigingen die nog niet naar de cloud zijn weggeschreven, bijvoorbeeld een afmelding
+    die je onderweg hebt doorgegeven. Zodra er weer verbinding is, wordt die wachtrij
+    verwerkt en geleegd.</p>
+    <p>Deze lokale kopie verdwijnt als je uitlogt, de app-gegevens wist of de app
+    verwijdert.</p>
+  </section>
+
+  <section>
+    <h2>Hoe lang gegevens worden bewaard</h2>
+    <ul>
+      <li>Spelers-, ouder- en wedstrijdgegevens blijven staan zolang het team actief is in
+      de app. Wordt een team gearchiveerd, dan blijven de gegevens maximaal één volledig
+      seizoen bewaard en worden daarna verwijderd.</li>
+      <li>Je eigen account blijft bestaan tot je vraagt het te verwijderen. Log je twee jaar
+      niet in, dan wordt het account opgeruimd.</li>
+      <li>Foto's worden verwijderd zodra de bijbehorende speler, begeleider of het team
+      wordt verwijderd.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Beveiliging</h2>
+    <p>Het verkeer tussen de app en Google verloopt versleuteld. De toegang tot de gegevens
+    is per team afgeschermd met regels die op de server worden afgedwongen. Alleen
+    aangemelde gebruikers die aan een team gekoppeld zijn, kunnen de gegevens van dat team
+    opvragen of aanpassen.</p>
+    <p>Geen enkele voorziening is volledig waterdicht. Vermoed je dat er iets mis is met de
+    beveiliging, meld het dan via het adres onderaan deze pagina.</p>
+  </section>
+
+  <section>
+    <h2>Jouw rechten</h2>
+    <p>Je hebt het recht om in te zien welke gegevens over jou worden verwerkt, om die te
+    laten corrigeren of verwijderen, om de verwerking te laten beperken, en om bezwaar te
+    maken tegen de verwerking. Ook kun je vragen om een kopie van je gegevens in een
+    gangbaar bestandsformaat.</p>
+    <p>Als ouder of verzorger kun je deze rechten ook uitoefenen namens je kind.</p>
+    <p>Een deel kun je zelf: je eigen naam, telefoonnummer en foto pas je aan in je profiel.
+    Voor het verwijderen van een account, een speler of de gegevens van een kind stuur je
+    een bericht naar het adres hieronder. Je krijgt binnen vier weken antwoord.</p>
+    <p>Ben je het oneens met hoe je verzoek is afgehandeld, dan kun je een klacht indienen
+    bij de Autoriteit Persoonsgegevens.</p>
+  </section>
+
+  <section>
+    <h2>Wijzigingen in deze verklaring</h2>
+    <p>Verandert er iets aan de app waardoor deze verklaring niet meer klopt, dan wordt de
+    tekst aangepast en de datum bovenaan bijgewerkt. Gaat het om een wezenlijke verandering
+    in welke gegevens worden verwerkt of met wie ze worden gedeeld, dan wordt dat ook in de
+    app gemeld.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <dl>
+        <dt>Uitgever</dt>
+        <dd>devalk.xyz</dd>
+        <dt>KvK</dt>
+        <dd>42069919</dd>
+        <dt>E-mail</dt>
+        <dd>privacy@devalk.xyz</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    Deze verklaring hoort bij de app MHC Weesp Teammanager zoals aangeboden via Google Play.
+  </footer>
+
+</div>
