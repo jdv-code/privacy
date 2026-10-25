@@ -1,0 +1,136 @@
+<title>Account verwijderen – MHC Weesp Teammanager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+  :root {
+    --bg: #fbfcfd; --surface: #ffffff; --fg: #101a28; --muted: #55687f;
+    --accent: #0f2b5c; --accent-soft: #e9eef7; --line: #e1e8f0;
+    --display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --body: 'Source Serif 4', ui-serif, Georgia, serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b1220; --surface: #131d30; --fg: #e7eef7; --muted: #9aadc4;
+      --accent: #7aa7e8; --accent-soft: #16233a; --line: #243349; color-scheme: dark;
+    }
+  }
+  body {
+    background: var(--bg); color: var(--fg); font-family: var(--body);
+    font-size: 17px; line-height: 1.65; padding-inline: 20px;
+  }
+  .sheet {
+    max-width: 42rem; margin-inline: auto; padding-block: 56px 72px;
+    display: flex; flex-direction: column; gap: 30px;
+  }
+  h1 {
+    font-family: var(--display); font-weight: 800; margin: 0;
+    font-size: clamp(28px, 6vw, 38px); line-height: 1.14; letter-spacing: -0.025em;
+  }
+  .app { font-family: var(--display); font-weight: 700; font-size: 18px; color: var(--muted); margin: 0 0 4px; }
+  .dateline {
+    font-family: var(--display); font-weight: 600; font-size: 13px;
+    letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted);
+  }
+  .box {
+    background: var(--accent-soft); border: 1px solid var(--line);
+    border-left: 4px solid var(--accent); border-radius: 10px; padding: 20px 22px;
+  }
+  .box p { margin: 0; }
+  section { display: flex; flex-direction: column; gap: 12px; }
+  h2 {
+    font-family: var(--display); font-weight: 700; font-size: 20px; margin: 0;
+    padding-top: 10px; border-top: 1px solid var(--line); letter-spacing: -0.012em;
+  }
+  p { margin: 0; }
+  ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 7px; }
+  li::marker { color: var(--accent); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  strong { font-family: var(--display); font-weight: 700; }
+  footer {
+    font-family: var(--display); font-size: 13px; color: var(--muted);
+    border-top: 1px solid var(--line); padding-top: 18px; line-height: 1.5;
+  }
+</style>
+
+<div class="sheet">
+
+  <header>
+    <p class="app">MHC Weesp Teammanager</p>
+    <h1>Account en gegevens verwijderen</h1>
+    <div class="dateline">Laatst bijgewerkt op 25 oktober 2026</div>
+  </header>
+
+  <div class="box">
+    <p><strong>Kort:</strong> stuur een e-mail naar
+    <a href="mailto:privacy@devalk.xyz">privacy@devalk.xyz</a> vanaf het e-mailadres van je
+    account, met als onderwerp "Account verwijderen". Je account en je gegevens worden dan
+    binnen 30 dagen verwijderd uit de database en de fotoopslag.</p>
+  </div>
+
+  <section>
+    <h2>Hoe je het aanvraagt</h2>
+    <p>Stuur een bericht naar <a href="mailto:privacy@devalk.xyz">privacy@devalk.xyz</a>.
+    Mail bij voorkeur vanaf het adres waarmee je inlogt, dan is duidelijk wie het verzoek
+    doet. Kun je dat niet, vermeld dan het e-mailadres van het account en de naam van je
+    team.</p>
+    <p>Ben je ouder of verzorger, dan kun je dit verzoek ook doen voor de gegevens van je
+    kind. Je kunt het daarnaast altijd melden bij de teammanager van je team; die kan de
+    gegevens van je kind zelf uit de app verwijderen.</p>
+    <p>Je krijgt een bevestiging zodra het is uitgevoerd.</p>
+  </section>
+
+  <section>
+    <h2>Wat er wordt verwijderd</h2>
+    <ul>
+      <li>je account: je naam, e-mailadres, telefoonnummer en profielfoto;</li>
+      <li>je inloggegevens, zodat je niet meer kunt inloggen;</li>
+      <li>de koppeling tussen jou en je kind of kinderen;</li>
+      <li>je contactgegevens bij de spelers waar je als ouder of begeleider aan gekoppeld
+      bent;</li>
+      <li>je foto uit de fotoopslag.</li>
+    </ul>
+    <p>Hoor je als laatste persoon bij een team, dan wordt dat hele team verwijderd:
+    spelers, ouders, wedstrijden, opstellingen en alle bijbehorende foto's.</p>
+  </section>
+
+  <section>
+    <h2>Wat blijft staan, en waarom</h2>
+    <p>Blijft je team wel bestaan, dan blijven de wedstrijden en opstellingen van dat team
+    staan, inclusief de vermelding dat een taak door jou of je kind is uitgevoerd. Die
+    gegevens horen bij het team en zijn voor de andere leden nodig om het seizoen af te
+    maken. Je naam en contactgegevens worden daar wel uit verwijderd.</p>
+    <p>Wil je ook dat die vermeldingen verdwijnen, geef dat dan aan in je verzoek.</p>
+  </section>
+
+  <section>
+    <h2>Automatische verwijdering</h2>
+    <p>Ook zonder verzoek worden gegevens niet eeuwig bewaard:</p>
+    <ul>
+      <li>een gearchiveerd team wordt <strong>zes maanden</strong> na archivering definitief
+      verwijderd, inclusief alle spelers-, ouder- en wedstrijdgegevens;</li>
+      <li>een account dat <strong>twaalf maanden</strong> niet is gebruikt wordt verwijderd.
+      Elke keer dat je inlogt gaat die termijn opnieuw lopen.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>De app verwijderen is niet hetzelfde</h2>
+    <p>Als je de app van je telefoon verwijdert, verdwijnen alleen de gegevens die op dat
+    toestel staan. Je account en de teamgegevens in de cloud blijven dan bestaan. Wil je die
+    ook weg hebben, stuur dan het verzoek hierboven.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>devalk.xyz, Nederland, KvK 42069919<br>
+    <a href="mailto:privacy@devalk.xyz">privacy@devalk.xyz</a></p>
+    <p>Zie ook de <a href="privacy-hockey.html">privacyverklaring</a> van deze app.</p>
+  </section>
+
+  <footer>
+    Deze pagina hoort bij de app MHC Weesp Teammanager zoals aangeboden via Google Play.
+  </footer>
+
+</div>
